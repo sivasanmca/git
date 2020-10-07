@@ -1,0 +1,15 @@
+version: "3"
+services:
+  myjenkins:
+    image: jenkins
+    ports:
+      - 8989:8080      
+  webserver:
+    image: tomcat
+    ports:
+      - 9999:8080
+    links:
+      - myjenkins:jenkins        
+
+
+

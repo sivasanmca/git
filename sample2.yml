@@ -1,0 +1,21 @@
+version: "3"
+
+services:
+  mydb:
+    image: jenkins
+    ports:
+      - 8989:8080
+
+  qaserver:
+    image: tomcat
+    ports:
+      - 9999:8080    
+    links:
+      - mydb:mysql   
+  prodserver:      
+    image: tomcat
+    ports:
+      - 7979:8080
+    links:
+      - mydb:mysql    
+      - qaserver:tomcat
