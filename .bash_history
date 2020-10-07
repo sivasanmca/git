@@ -581,3 +581,46 @@ git config --list
 ls
 clear
 exit
+clear
+pwd
+clear
+git init
+clear
+ls
+clear
+ls -a
+clear
+git status
+clear
+git status
+git add sample1.yml
+git status
+clear
+git add .
+git status
+git rm --cached docker docker-compose.yml
+git status
+clear
+git commit -m "a"
+clear
+git status
+git log
+clear
+git log --oneline
+clear
+ls
+clear
+git branch test
+git branch
+git checkout test
+git branch
+git checkout master
+git branch
+clear
+git log --oneline
+clear
+git status
+clear
+git remote add origin https://github.com/sivasanmca/git.git
+git branch -M main
+git push -u origin main
